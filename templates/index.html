@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Checkerboard</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Checkerboard</h1>
+        <div class="boardholder">
+        
+        {% for x in range(28) %}
+            <div class="check-box" style="background-color: {{ color }}"></div>
+            <div class="check-box" style="background-color: #ffffe0"></div>
+        {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
